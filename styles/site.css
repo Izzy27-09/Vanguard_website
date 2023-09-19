@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(97, 96, 29);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(23, 8, 93);
+    display: flex;
+    flex-direction: column;
+}
+div{
+    background-color: rgb(183, 170, 179);
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+}
+
+h1{
+    font-weight: bold;
+    text-align:center;
+    background-color: rgb(255, 254, 254);
+    border-style: solid;
+    border-radius: 40px;
+}
+
+h2{
+    border-style: solid;
+    font-weight: bold;
+    border-radius: 40px;
+    text-align:center;
+    background-color: rgb(255, 254, 254);
+}
+
+h3{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+dt{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+dd{
+    font-style: italic;
+    margin: 10px;
+}
+img{
+    border-radius: 20px;
+}
+figure{
+    margin: auto;
+    padding: 10px;
+}
+
+h4{
+    text-decoration: underline;
+}
+
+strong{
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+dl li{
+    text-decoration: underline;
+    font-style: normal;
+}
+
+
+ul{
+    list-style-type: square;
+}
+
+ul ul{
+    list-style-type: circle;
+}
+
+ul.header{
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+}
+
+li.header{
+    margin:auto;
+    font-size: large;
+}
+.explanation{
+    font-weight: bold;
+}
