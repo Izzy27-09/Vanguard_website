@@ -16,22 +16,51 @@
 <body>
   <div>
     <header>
-      <nav >
-        <ul class="header">
-          <li class="header"><a href="index.html">What is Vanguard and Reading Cards</a></li>
-          <li class="header"><a href="Nations.html">Nations and Ridelines</a></li>
-          <li class="header"><a href="Playfield.html">Rules and Field</a></li>
-          <li class="header"><a href="Symbols.html">Other Icons</a></li>
-        </ul>
-      </nav>
+      <nav class="header" >
+        <div class="header">                                       <!--https://commons.wikimedia.org/wiki/File:Feather-arrows-chevron-left.svg#/media/File:Feather-arrows-chevron-left.svg-->
+          <button id="vanread">What is Vanguard and Reading Cards <img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+          <div class="cards hidden ">
+           <a href="index.html#vanguard">What is Vanguard</a>
+           <a href="index.html#types">Types of cards</a>
+           <a href="index.html#reading">How to read cards</a>
+           <a href="index.html#trigger">Types of triggers</a>
+          </div></div>
+
+          <div class="header">
+            <button id="natride">Nations and Ridelines<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+        <div class="nations hidden">
+          <a href="nations.html#map" >Map</a>
+          <a href="nations.html#empire">Dragon Empire</a>
+          <a href="nations.html#gate">Brandt Gate</a>
+          <a href="nations.html#chiea">Stoichea</a>
+          <a href="nations.html#sanctuary">Keter Sanctuary</a>
+        </div></div>
+
+        <div class="header">
+          <button id="rulefield">Rules and Field<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+          <div class="field hidden">
+            <a href="playfield.html#deck">Deck Prepartions</a>
+            <a href="playfield.html#field">Playing Field</a>
+            <a href="playfield.html#before">Before you start playing</a>
+            <a href="playfield.html#phases">Phases</a>
+          </div></div>
+
+
+        <div class="header">
+          <button id="icon">Other Icons<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+          <div class="icons  hidden">
+            <a href="symbols.html#skill-icon">Skill Icons</a>
+            <a href="symbols.html#ability-icon">Card Ability Icons</a>
+          </div></div>
+    </nav>
     </header>
     <section >
-    <h1>WHAT IS Vanguard?</h1>
+    <h1 id="vanguard">WHAT IS Vanguard?</h1>
     <p> It is a cardgame, where players construct decks of 50 cards that they have collected and battle against eachother.</p>
     <p>But before try to dive right into making a deck,you should propably know the types of cards and how to read them for the game.</p>
   </section>
 
-  <h2>TYPES OF CARDS</h2>
+  <h2 id="types">TYPES OF CARDS</h2>
   <p>There are two main types of Cards,they are:</p>
     <ul>
       <li>
@@ -44,21 +73,24 @@
     <h3>Unit Cards</h3>
     <p>There are two types of unit Cards</p>
     <ol>
-      <li>Normal Units which have a black bottom
+      <li><strong>Normal Units</strong> which have a black bottom
         <figure>
+          <!--Company: Bushiroad Illustrator:城戸春一-->
           <img src="images/nor-unit.png" alt="Knight in white armor" width="370" height="540">
         </figure>
       </li>
-      <li>Trigger Units which have a yellow bottom
+      <li><strong>Trigger Units</strong> which have a yellow bottom
         <figure>
+          <!--Bushiroad Illustraor:筒井海砂-->
           <img src="images/tri-unit.png" alt="Mermaid chicken" width="370" height="538">
         </figure>
       </li>
     </ol>
 
   <section>
-  <h4>How to read Unit Cards</h4>
+  <h4 id="reading">How to read Unit Cards</h4>
   <figure>
+    <!--Company: Bushiroad Illustrator:kaworu-->
     <img src="images/how-to-read.png" alt="Card with red circles around the areas of intrest" height="555" width="370">
   </figure>
   <ol>
@@ -68,42 +100,42 @@
     <li>Represents what nation the card belongs to</li>
   </ol>
 
-  <h4>Types of Triggers</h4>
-  <dl>
-    <dt>Critical Triggers<figure>
-      <img src="images/crit.png" width="95" height="108" alt="silver box with gold star on top">
-    </figure>
-    </dt>
-    <dd>Choose a unit to get +10,000 and the same or another unit to increase its damage by 1</dd>
+  <h4 id="trigger">Types of Triggers</h4>
+  <div class="carousel">
+    <button id="last0"><img src="images/left-arrow.svg" alt="left arrow" width="100"></button>
+    <div class="trigger-car">
 
-    <dt>Draw Triggers
-      <figure>
-        <img src="images/draw.png" alt="silver box with red square on top" width="95" height="117" >
-      </figure>
-    </dt>
-    <dd>Choose a unit to get +10,000 then draw 1 card</dd>
+      <p class="slide1" id="slides1"><strong>Critical Triggers</strong><br>
+        <!--Company: Bushiroad-->
+        <img src="images/crit.png" width="95" height="108" alt="silver box with gold star on top"><br>Choose a unit to get +10,000 and the same or another unit to increase its damage by 1</p>
 
-    <dt>Front Triggers
-      <figure>
-        <img src="images/front.png" alt="pink square on silver box" width="95" height="108">
-      </figure>
-    </dt>
-    <dd>All front row units get +10,000</dd>
+      <p class="slide1 hidden" id="slides2"><strong>Draw Triggers</strong><br>
+             <!--Company: Bushiroad-->
+            <img src="images/draw.png" alt="silver box with red square on top" width="95" height="117" ><br>Choose a unit to get +10,000 then draw 1 card</p>
+      <p class="slide1 hidden" id="slides3" ><strong>Front Triggers</strong><br>
+        <!--Company: Bushiroad-->
+        <img src="images/front.png" alt="pink square on silver box" width="95" height="108"><br>All front row units get +10,000</p>
 
-    <dt>Heal Triggers
-      <figure>
-        <img src="images/heal.png" width="95" height="113" alt="green square on silver box">
-      </figure>
-    </dt>
-    <dd>Choose a unit to get +10,000, then if you have more or equal damage as the opponent move a card from the damage zone to drop zone</dd>
+      <p class="slide1 hidden" id="slides4"><strong>Heal Trigger</strong><br>
+        <!--Company: Bushiroad-->
+        <img src="images/heal.png" width="95" height="113" alt="green square on silver box"><br>Choose a unit to get +10,000, then if you have more or equal damage as the opponent move a card from the damage zone to drop zone</p>
 
-    <dt>Over Trigger
-      <figure>
-        <img src="images/overt.png" width="95" height="69" alt="multi-color square on black box">
-      </figure>
-    </dt>
-    <dd>You may only have 1 per deck and it gives +1,000,000 and additional effect. After play remove from game</dd>
-  </dl>
+      <p class="slide1 hidden" id="slides5"><strong>Over-Trigger</strong><br>
+        <!--Company: Bushiroad-->
+        <img src="images/overt.png" width="95" height="69" alt="multi-color square on black box"><br>You may only have 1 per deck and it gives +1,000,000 and additional effect. After play remove from game</p>
+
+
+    </div>
+   <button id="next0"><img class="right" src="images/left-arrow.svg" alt="right arrow" width="100"></button>
+  </div>
+  <div class="circles">
+    <button class="circle active" id="dott1"></button>
+    <button class="circle" id="dott2"></button>
+    <button class="circle" id="dott3"></button>
+    <button class="circle" id="dott4"></button>
+    <button class="circle" id="dott5"></button>
+   </div>
+
   </section>
   <section>
    <h3>Order Cards</h3>
@@ -116,6 +148,7 @@
         <li>Has a blue icon</li>
       </ul>
       <figure>
+         <!--Company:Bushiroad Illustrator:山﨑奈苗-->
         <img src="images/nor-or.png" alt="Knight around butterflies" width="370" height="532">
       </figure>
     </li>
@@ -126,6 +159,7 @@
         <li>Has a red icon</li>
       </ul>
       <figure>
+        <!--Company: Bushiroad Illustrator:藤ちょこ-->
         <img src="images/blitz-or.png" alt="Women around a fire" width="370" height="529">
       </figure>
     </li>
@@ -136,6 +170,7 @@
         <li>They have a white icon</li>
       </ul>
       <figure>
+        <!--Company: Bushiroad Illustrator:SENNSU-->
         <img src="images/set-or.png" alt="Metoers falling from the sky" width="370" height="532">
       </figure>
     </li>
@@ -144,6 +179,9 @@
 
   </div>
 
+<script src="scripts/jquery-3.6.1.js"></script>
+<script src="scripts/navbar.js"></script>
+<script src="scripts/carousel-home.js"></script>
 </body>
 
 </html>

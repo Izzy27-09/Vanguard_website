@@ -15,55 +15,87 @@
 <body>
   <div>
   <header>
-    <nav>
-      <ul class="header">
-        <li class="header"><a href="index.html">What is Vanguard and Reading Cards</a></li>
-        <li class="header"><a href="Nations.html">Nations and Ridelines</a></li>
-        <li class="header"><a href="Playfield.html">Rules and Field</a></li>
-        <li class="header"><a href="Symbols.html">Other Icons</a></li>
-      </ul>
-    </nav>
+    <nav class="header" >
+      <div class="header">
+        <button id="vanread">What is Vanguard and Reading Cards<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+        <div class="cards hidden ">
+         <a href="index.html#vanguard">What is Vanguard</a>
+         <a href="index.html#types">Types of cards</a>
+         <a href="index.html#reading">How to read cards</a>
+         <a href="index.html#trigger">Types of triggers</a>
+        </div></div>
+
+        <div class="header">
+          <button id="natride">Nations and Ridelines<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+      <div class="nations hidden">
+        <a href="nations.html#map" >Map</a>
+        <a href="nations.html#empire">Dragon Empire</a>
+        <a href="nations.html#gate">Brandt Gate</a>
+        <a href="nations.html#chiea">Stoichea</a>
+        <a href="nations.html#sanctuary">Keter Sanctuary</a>
+      </div></div>
+
+      <div class="header">
+        <button id="rulefield">Rules and Field<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+        <div class="field hidden">
+          <a href="playfield.html#deck">Deck Prepartions</a>
+          <a href="playfield.html#field">Playing Field</a>
+          <a href="playfield.html#before">Before you start playing</a>
+          <a href="playfield.html#phases">Phases</a>
+        </div></div>
+
+
+      <div class="header">
+        <button id="icon">Other Icons<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+        <div class="icons  hidden">
+          <a href="symbols.html#skill-icon">Skill Icons</a>
+          <a href="symbols.html#ability-icon">Card Ability Icons</a>
+        </div></div>
+  </nav>
   </header>
   <h1>Other Icons in the Game</h1>
-  <h2>Skill Icons</h2>
+  <h2 id="skill-icon">Skill Icons</h2>
   <dl>
-
+                                   <!--Company: Bushiroad-->
     <dt>Boost(Grades 0,1)<figure><img src="images/boost.png " width="95"   height="102" alt="Triple arrows pointing upwards"></figure></dt>
       <dd>When units in the front row for the same column this unit is in attacks rest it to add their power to them</dd>
-
+                                      <!--Company: Bushiroad-->
       <dt>Intercept(Grades 2)<figure><img src="images/inter.png" width="95" height="95" alt="Arrow pointing downwards"></figure></dt>
       <dd>Units on the rearguard circle with this icon can be placed in Guardian Circle when being attacked.Applies to front row units</dd>
-
+                                    <!--Company: Bushiroad-->
     <dt>Twin Drive(Grade 3)<figure><img src="images/twin.png" width="95" height="101" alt="two arrows interwining"></figure></dt>
     <dd>If units with this icon are on the vanguard circle and attack, you drive check 2 times</dd>
-
+                                       <!--Company: Bushiroad-->
     <dt> Persona ride(Grade 3)<figure><img src="images/person.png" alt="yellow arrow head" width="95" height="108"></figure></dt>
     <dd> Only happen if you place the same grade 3 ontop of another copy of it on vanguard circle.The effect it gives is to,draw 1 card and front row gains +10,000 upon doing so unit end of turn</dd>
   </dl>
-  <h2>Card Ability Icons</h2>
+  <h2 id="ability-icon">Card Ability Icons</h2>
   <dl>
+            <!--Company: Bushiroad-->
     <dt><img src="images/act.png" width="95" height="57" alt="The word ACT with blue background"></dt>
     <dd class="explanation">Use these by paying the cost before attacking</dd>
-
+           <!--Company: Bushiroad-->
     <dt><img src="images/auto.png" width="95" height="53" alt="Word"></dt>
     <dd class="explanation">Once conditions are meet, they are used automatically</dd>
-
+                 <!--Company: Bushiroad-->
     <dt><figure><img src="images/cont.png" width="95" height="51" alt="Word Cont with red background"></figure></dt>
     <dd class="explanation">Always active once card is on the field</dd>
-
+                 <!--Company: Bushiroad-->
     <dt><figure><img src="images/cb.png" width="95" height="40" alt="Word c blast with blue background"></figure></dt>
     <dd class="explanation">Type of cost in game requiring you to turn face up cards in the damage zone face down</dd>
-
+                 <!--Company: Bushiroad-->
     <dt><figure><img src="images/cc.png" alt="Word c black with white background" width="95" height="39"></figure></dt>
     <dd class="explanation">This is where you turn face down cards in the damage zone face up</dd>
-
+                  <!--Company: Bushiroad-->
     <dt><figure><img src="images/sb.png" alt="word sblast with red background" width="95" height="38"></figure></dt>
     <dd class="explanation">Type of cost where you move the stated amount of cards under the Vanguard(soul) to the drop zone</dd>
-
+                      <!--Company: Bushiroad-->
     <dt><figure><img src="images/sc.png" alt="word scharge with white background" width="95" height="38"></figure></dt>
     <dd class="explanation">This is where you place the stated amound of cards under the Vanguard(soul) from the deck</dd>
   </dl>
   </div>
+  <script src="scripts/jquery-3.6.1.js"></script>
+  <script src="scripts/navbar.js"></script>
   </body>
 
 </html>

@@ -42,3 +42,4 @@
 * ![Armoured alien with scythe](images/orfist.png)Company:Busiroad Illustrator:DaisukeIzuka
 * ![Woman with big handcuffs](images/snow.png)Company:Busiroad Illustrator: CLAMP.ST ERIMO
 * ![Dragon with swords and guns](images/the-end.png)Company:Busiroad Illustrator:タカヤマトシアキ
+* ![Left facing arrow](images/left-arrow.svg) [source](https://commons.wikimedia.org/wiki/File:Feather-arrows-chevron-left.svg#/media/File:Feather-arrows-chevron-left.svg)

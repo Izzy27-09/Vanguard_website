@@ -16,21 +16,50 @@
 <body>
   <div>
 <header>
-  <nav>
-    <ul class="header">
-      <li class="header" ><a href="index.html">What is Vanguard and Reading</a></li>
-      <li class="header"><a href="Nations.html">Nations and Ridelines</a></li>
-      <li class="header"><a href="Playfield.html">Rules and Field</a></li>
-      <li class="header"><a href="Symbols.html">Other Icons</a></li>
-    </ul>
-  </nav>
+  <nav class="header" >
+    <div class="header">
+      <button id="vanread">What is Vanguard and Reading Cards<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+      <div class="cards hidden ">
+       <a href="index.html#vanguard">What is Vanguard</a>
+       <a href="index.html#types">Types of cards</a>
+       <a href="index.html#reading">How to read cards</a>
+       <a href="index.html#trigger">Types of triggers</a>
+      </div></div>
+
+      <div class="header">
+        <button id="natride">Nations and Ridelines<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+    <div class="nations hidden">
+      <a href="nations.html#map" >Map</a>
+      <a href="nations.html#empire">Dragon Empire</a>
+      <a href="nations.html#gate">Brandt Gate</a>
+      <a href="nations.html#chiea">Stoichea</a>
+      <a href="nations.html#sanctuary">Keter Sanctuary</a>
+    </div></div>
+
+    <div class="header">
+      <button id="rulefield">Rules and Field<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+      <div class="field hidden">
+        <a href="playfield.html#deck">Deck Prepartions</a>
+        <a href="playfield.html#field">Playing Field</a>
+        <a href="playfield.html#before">Before you start playing</a>
+        <a href="playfield.html#phases">Phases</a>
+      </div></div>
+
+
+    <div class="header">
+      <button id="icon">Other Icons<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+      <div class="icons  hidden">
+        <a href="symbols.html#skill-icon">Skill Icons</a>
+        <a href="symbols.html#ability-icon">Card Ability Icons</a>
+      </div></div>
+</nav>
 </header>
 
   <h1>
     Rules and Playing Field
   </h1>
 
-    <h2>Deck Prepartions</h2>
+    <h2 id="deck">Deck Prepartions</h2>
     <ul>
       <li>A deck is made up of 50 cards</li>
       <li>No more than 4 copies of a card are allowed in a deck</li>
@@ -40,11 +69,12 @@
     </ul>
 
 
-    <h2>Playing field</h2>
+    <h2 id="field">Playing field</h2>
     <figure>
+      <!--Company: Bushiroad-->
       <img src="images/mat.png" alt="Playing field" width="890" height="531">
     </figure>
-    <h2>Before you Start Playing</h2>
+    <h2 id="before">Before you Start Playing</h2>
     <ol>
       <li>Place Start Deck in  Ride zone portion of the field face down</li>
       <li>Place rest of deck in Deck portion</li>
@@ -56,7 +86,7 @@
     </ol>
 
 
-    <h2>Phases</h2>
+    <h2 id="phases">Phases</h2>
     <ol>
       <li>Stand and Draw
         <ul>
@@ -128,5 +158,7 @@
 
     </ol>
 </div>
+<script src="scripts/jquery-3.6.1.js"></script>
+<script src="scripts/navbar.js"></script>
 </body>
 </html>

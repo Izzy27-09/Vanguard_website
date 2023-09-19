@@ -10,10 +10,6 @@
   <meta charset="UTF-8" >
   <meta name="viewport" content="width=device-width, initial-scale=1" >
 
-
-
-
-
   <title>Nations and Ridelines</title>
 
 
@@ -21,62 +17,169 @@
 <body>
   <div>
   <header>
-    <nav>
-      <ul class="header">
-        <li class="header"><a href="index.html">What is Vanguard and Reading Cards</a></li>
-        <li class="header"><a href="Nations.html">Nations and Ridelines</a></li>
-        <li class="header"><a href="Playfield.html">Rules and Field</a></li>
-        <li class="header"><a href="Symbols.html">Other Icons</a></li>
-      </ul>
-    </nav>
+    <nav class="header" >
+      <div class="header">
+        <button id="vanread">What is Vanguard and Reading Cards<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+        <div class="cards hidden ">
+         <a href="index.html#vanguard">What is Vanguard</a>
+         <a href="index.html#types">Types of cards</a>
+         <a href="index.html#reading">How to read cards</a>
+         <a href="index.html#trigger">Types of triggers</a>
+        </div></div>
+
+        <div class="header">
+          <button id="natride">Nations and Ridelines<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+      <div class="nations hidden">
+        <a href="nations.html#map" >Map</a>
+        <a href="nations.html#empire">Dragon Empire</a>
+        <a href="nations.html#gate">Brandt Gate</a>
+        <a href="nations.html#chiea">Stoichea</a>
+        <a href="nations.html#sanctuary">Keter Sanctuary</a>
+      </div></div>
+
+      <div class="header">
+        <button id="rulefield">Rules and Field<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+        <div class="field hidden">
+          <a href="playfield.html#deck">Deck Prepartions</a>
+          <a href="playfield.html#field">Playing Field</a>
+          <a href="playfield.html#before">Before you start playing</a>
+          <a href="playfield.html#phases">Phases</a>
+        </div></div>
+
+
+      <div class="header">
+        <button id="icon">Other Icons<img class="down" src="images/left-arrow.svg" alt="down arrow" width="40"></button>
+        <div class="icons  hidden">
+          <a href="symbols.html#skill-icon">Skill Icons</a>
+          <a href="symbols.html#ability-icon">Card Ability Icons</a>
+        </div></div>
+  </nav>
   </header>
-  <h1>Nations</h1>
+
+  <h1 id="map">Nations</h1>
+  <!--Company: Bushiroad-->
   <figure><img src="images/nations.png" width="950" height="631" alt="Map showing the location of the 5 nations" ></figure>
 
 
   <p>There are 5 main nations in this game, and each nation has a set of leaders to build the deck around.The list below shows the main chracteristics of each nation plus a sample of some of the leaders you build around.</p>
 
-  <dl>
-    <dt>Dragon Empire:</dt><dd>This nation consits mostly of dragons,dinosaurs and other repitiles. Some of the Ridelines for this nation are:
-      <ul>
-        <li>Bavsargra<figure><img src="images/bavsa.png" width="370" height="541" alt="Woman with wings and blue dress"></figure></li>
-        <li>Nirvana<figure><img src="images/nirvana.png" width="370" height="527" alt="Bird-like dragon"></figure></li>
-        <li>The End<figure><img src="images/the-end.png" width="370" height="532" alt="Red dragon with guns and swords"></figure></li></ul></dd>
+  <p id="empire"><strong>Dragon Empire</strong><br>This nation consits mostly of dragons,dinosaurs and other repitiles.<br>Some of the Ridelines for this nation are:</p>
+  <div class="carousel">
 
-        <dt>Brandt Gate:</dt><dd> This nation is made up of aliens, robots, and space police.Some of the Ridelines are:
-          <ul>
-            <li>Seraph Snow<figure><img src="images/snow.png" width="370" height="535" alt="Woman with large handcuffs"></figure></li>
-            <li>Gravida<figure><img src="images/gravidia.png" width="370" height="542" alt="Purple alien flower slug"></figure></li>
-            <li>Orfist<figure><img src="images/orfist.png" width="370" height="536" alt="Armoured alien with scythe"></figure></li>
-          </ul>
-           </dd>
+    <button id="last2"><img src="images/left-arrow.svg" alt="left arrow" width="50"></button>
 
-        <dt>Keter Sanctuary:</dt><dd> This nation is comprised of knights,angels and witches. Some Ridelines for this nation are:
-          <ul>
-            <li>Bastion<figure><img src="images/Bastion.png" alt="Knight on a horse" width="370" height="535"></figure></li>
-            <li>Hexaorb<figure><img src="images/Hexaorb.png" alt="Witch with hexagons around her" width="370" height="533"></figure></li>
-            <li>Lord Blaster<figure><img src="images/lord.png" alt="Knight in black armor with fire for hair" width="370" height="541"></figure></li>
-          </ul></dd>
-
-
-        <dt>Dark States:</dt><dd> This nation consits mostly of demons. Some of the Ridelines are:
-          <ul>
-            <li>Violence Bruce<figure><img src="images/bruce.png" alt="Demon in football gear" width="370" height="532"></figure></li>
-            <li>Greedon<figure><img src="images/greedon.png" alt="Demon in purple suit" width="370" height="538"></figure></li>
-            <li>Baromagnes<figure><img src="images/baro.png" alt="Man football gear tightsuit" width="370" height="527"></figure></li>
-          </ul></dd>
-
-
-        <dt>Stoichea</dt><dd>This nation mostly comprises animal,plant based creatures,humans and elves. Some of the Ridelines are:
-          <ul>
-            <li>Magnolia<figure><img src="images/magnolia.png" alt="Cat like creature with wings" width="370" height="536"></figure></li>
-            <li>Flagburg<figure><img src="images/flagburg.png" alt="Water Dragon with cannons" width="370" height="532"></figure></li>
-            <li>Rorowa<figure><img src="images/rorowa.png" alt="Man dressed in green with a sword" width="370" height="547"></figure></li>
-          </ul></dd>
-
-
-
-      </dl>
+    <div class="slides2">
+       <!--Company:Busiroad Illustrator:前河悠一-->
+      <p class="slide2" id="slide1"><strong>Bavsargra</strong><img src="images/bavsa.png" width="370" height="541" alt="Woman with wings and blue dress" ></p>
+      <!--Company:Busiroad Illustrator:ひと和-->
+      <p class="slide2 hidden" id="slide2"><strong>Nirvana</strong><img src="images/nirvana.png" width="370" height="527" alt="Bird-like dragon" ></p>
+      <!--Company:Busiroad Illustrator:タカヤマトシアキ-->
+      <p class="slide2 hidden" id="slide3"><strong>The End</strong><img src="images/the-end.png" width="370" height="532" alt="Red dragon with guns and swords" ></p>
+    </div>
+   <button id="next2"><img class="right" src="images/left-arrow.svg" alt="right arrow" width="50"></button>
   </div>
+  <div class="circles">
+    <button class="circle active" id="dot1"></button>
+    <button class="circle" id="dot2"></button>
+    <button class="circle" id="dot3"></button>
+   </div>
+
+  <p id="gate"><strong>Brandt Gate</strong><br>This nation is made up of aliens, robots, and space police.<br>Some of the Ridelines are:</p>
+
+  <div class="carousel">
+
+    <button id="last"><img src="images/left-arrow.svg" alt="left arrow" width="50"></button>
+
+    <div class="slides3">
+      <!--Company:Busiroad Illustrator: CLAMP.ST ERIMO-->
+      <p class="slide3" id="slide4"><strong>Seraph Snow</strong><img src="images/snow.png" width="370" height="535" alt="Woman with large handcuffs"></p>
+      <!--Company:Busiroad Illustrator:黒井ススム-->
+      <p class="slide3 hidden" id="slide5"><strong>Gravida</strong><img src="images/gravidia.png" width="370" height="542" alt="Purple alien flower slug" ></p>
+      <!--Company:Busiroad Illustrator:DaisukeIzuka-->
+      <p class="slide3 hidden" id="slide6"><strong>Orfist</strong><img src="images/orfist.png" width="370" height="536" alt="Armoured alien with scythe"></p>
+    </div>
+
+   <button id="next"><img class="right" src="images/left-arrow.svg" alt="right arrow" width="50"></button>
+
+  </div>
+  <div class="circles">
+    <button class="circle2 active" id="dot4"></button>
+    <button class="circle2" id="dot5"></button>
+    <button class="circle2" id="dot6"></button>
+   </div>
+
+  <p id="sanctuary"><strong>Keter Sanctuary</strong><br>This nation is comprised of knights,angels and witches.<br>Some Ridelines for this nation are:</p>
+
+  <div class="carousel">
+
+    <button id="last3"><img src="images/left-arrow.svg" alt="left arrow" width="50"></button>
+    <div class="slides4">
+      <!--Company:Busiroad Illustraor: CLAMP.ST  えびら-->
+      <p class="slide4" id="slide7"><strong>Bastion</strong><img src="images/Bastion.png" alt="Knight on a horse" width="370" height="535"></p>
+      <!--Company:Busiroad Illustrator:百瀬寿-->
+      <p class="slide4 hidden" id="slide8"><strong>Hexaorb</strong><img src="images/Hexaorb.png" alt="Witch with hexagons around her" width="370" height="533"></p>
+      <!--Company:Busiroad Illustrators:伊藤彰 / 三好載克-->
+      <p class="slide4 hidden" id="slide9"><strong>Lord Blaster</strong><img src="images/lord.png" alt="Knight in black armor with fire for hair" width="370" height="541"></p>
+
+
+
+    </div>
+   <button id="next3"><img class="right" src="images/left-arrow.svg" alt="right arrow" width="50"></button>
+  </div>
+  <div class="circles">
+    <button class="circle3 active" id="dot7"></button>
+    <button class="circle3" id="dot8"></button>
+    <button class="circle3" id="dot9"></button>
+   </div>
+
+  <p id="states"><strong>Dark States</strong><br>This nation consits mostly of demons.<br>Some of the Ridelines are:</p>
+  <div class="carousel">
+    <button id="last4"><img src="images/left-arrow.svg" alt="left arrow" width="50"></button>
+    <div class="slides5">
+      <!--Bushiroad Illustrator: CLAMP.ST lack-->
+      <p class="slide5" id="id10"><strong>Violence Bruce</strong><img src="images/bruce.png" alt="Demon in football gear" width="370" height="532"></p>
+      <!--Company: Bushiroad Illustator:Moopic-->
+      <p class="slide5 hidden" id="id11"><strong>Greedon</strong><img src="images/greedon.png" alt="Demon in purple suit" width="370" height="538"></p>
+
+      <!--Company: Bushiroad Illustator:桂福蔵-->
+      <p class="slide5 hidden" id="id12"><strong>Baromagnes</strong><img src="images/baro.png" alt="Man football gear tightsuit" width="370" height="527"></p>
+    </div>
+
+  <button id="next4"><img class="right" src="images/left-arrow.svg" alt="right arrow" width="50"></button>
+  </div>
+  <div class="circles">
+    <button class="circle4 active" id="dot10"></button>
+    <button class="circle4" id="dot11"></button>
+    <button class="circle4" id="dot12"></button>
+   </div>
+
+    <p id="chiea"><strong>Stoichea</strong><br>This nation mostly comprises animal,plant based creatures,humans and elves.<br>Some of the Ridelines are:</p>
+    <div class="carousel">
+      <button id="last5"><img src="images/left-arrow.svg" alt="left arrow" width="50"></button>
+      <div class="slides6">
+        <!--Company: Bushiroad Illustrator:CLAPM ST-->
+        <p class="slide6" id="13"><strong>Magnolia</strong><img src="images/magnolia.png" alt="Cat like creature with wings" width="370" height="536"></p>
+        <!--Company: Bushiroad Illustrator:ダイエクスト(DAI-XT.)-->
+        <p class="slide6 hidden" id="14"><strong>Flagburg</strong><img src="images/flagburg.png" alt="Water Dragon with cannons" width="370" height="532"></p>
+        <!--Bushiroad Illustrator:kaworu / るみえ-->
+        <p class="slide6 hidden" id="15"><strong>Rorowa</strong><img src="images/rorowa.png" alt="Man dressed in green with a sword" width="370" height="547"></p>
+
+      </div>
+      <button id="next5"><img class="right" src="images/left-arrow.svg" alt="right arrow" width="50"></button>
+
+ </div>
+ <div class="circles">
+  <button class="circle5 active" id="dot13"></button>
+  <button class="circle5" id="dot14"></button>
+  <button class="circle5" id="dot15"></button>
+ </div>
+  </div>
+  <script src="scripts/jquery-3.6.1.js"></script>
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/carousel-dragon-empire.js"></script>
+  <script src="scripts/carousel-brandt-gate.js"></script>
+  <script src="scripts/carousel-keter-sanctuary.js"></script>
+  <script src="scripts/carousel-dark-states.js"></script>
+  <script src="scripts/carousel-stoichea.js"></script>
   </body>
 </html>
